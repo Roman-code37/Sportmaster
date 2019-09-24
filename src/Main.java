@@ -11,19 +11,19 @@ public class Main {
         int bonus = purchases / amountForBonus * bonusesPerAmount;
         int accumulatedBonuses = amountForPurchases / amountForBonus * bonusesPerAmount;
 
-
-        if (blueCard >=1 && blueCard <= 15_000) {
+        if (blueCard >= 1 && blueCard <= 15_000) {
             System.out.println(accumulatedBonuses);
             System.out.println(bonus);
         } else {
-            if (silverCard >= 15_001 && silverCard <= 150_000)
-            System.out.println(accumulatedBonuses);
-            System.out.println(bonus);
-        } if (goldCard >= 150_000){
-            System.out.println(accumulatedBonuses);
-            System.out.println(bonus);
-        }
+            if (silverCard >= 15_001 && silverCard <= 150_000) {
+                System.out.println(accumulatedBonuses);
+                System.out.println(bonus);
+            }
+            if (goldCard >= 150_000) {
+                System.out.println(accumulatedBonuses);
+                System.out.println(bonus);
+            }
 
         }
     }
-
+}
