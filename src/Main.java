@@ -20,7 +20,7 @@ public class Main {
                 System.out.println(accumulatedBonuses);
                 System.out.println(bonus);
         }
-
+        goldCard:
         if (purchases >= 150_000) {
             byte bonusesPerAmount = 100;
             int bonus = purchases / amountForBonus * bonusesPerAmount;
