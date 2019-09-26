@@ -1,30 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-        // TODO: За каждую полную тысячу рублей: 50 бонусов
-        int amountForPurchases = 20_000;
-        int purchases = 200_000;
+        int amountOfPreviousPurchases = 20_000;
+        int amountOfPurchases = 200_000;
         int amountForBonus = 1_000;
-            blueCard:
-        if (purchases >= 1 && purchases <= 15_000) {
-            byte bonusesPerAmount = 50;
-            int bonus = purchases / amountForBonus * bonusesPerAmount;
-            int accumulatedBonuses = amountForPurchases / amountForBonus * bonusesPerAmount;
+
+        if (amountOfPurchases >= 1 && amountOfPurchases <= 15_000) {
+            int bonusesPerAmount = 50;
+            int bonus = amountOfPurchases / amountForBonus * bonusesPerAmount;
+            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesPerAmount;
                 System.out.println(accumulatedBonuses);
                 System.out.println(bonus);
-        }
-        silverCard:
-        if (purchases >= 15_001 && purchases <= 150_000) {
-            byte bonusesPerAmount = 70;
-            int bonus = purchases / amountForBonus * bonusesPerAmount;
-            int accumulatedBonuses = amountForPurchases / amountForBonus * bonusesPerAmount;
+        } if (amountOfPurchases >= 15_001 && amountOfPurchases <= 150_000) {
+            int bonusesPerAmount = 70;
+            int bonus = amountOfPurchases / amountForBonus * bonusesPerAmount;
+            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesPerAmount;
                 System.out.println(accumulatedBonuses);
                 System.out.println(bonus);
-        }
-        goldCard:
-        if (purchases >= 150_000) {
-            byte bonusesPerAmount = 100;
-            int bonus = purchases / amountForBonus * bonusesPerAmount;
-            int accumulatedBonuses = amountForPurchases / amountForBonus * bonusesPerAmount;
+        }if (amountOfPurchases >= 150_000) {
+            int bonusesPerAmount = 100;
+            int bonus = amountOfPurchases / amountForBonus * bonusesPerAmount;
+            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesPerAmount;
                 System.out.println(accumulatedBonuses);
                 System.out.println(bonus);
             }
