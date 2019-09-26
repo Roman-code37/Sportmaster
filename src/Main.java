@@ -5,21 +5,21 @@ public class Main {
         int amountForBonus = 1_000;
 
         if (amountOfPurchases >= 1 && amountOfPurchases <= 15_000) {
-            int bonusesPerAmount = 50;
-            int bonus = amountOfPurchases / amountForBonus * bonusesPerAmount;
-            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesPerAmount;
+            int bonusesOfPurchases = 50;
+            int bonus = amountOfPurchases / amountForBonus * bonusesOfPurchases;
+            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesOfPurchases;
                 System.out.println(accumulatedBonuses);
                 System.out.println(bonus);
         } if (amountOfPurchases >= 15_001 && amountOfPurchases <= 150_000) {
-            int bonusesPerAmount = 70;
-            int bonus = amountOfPurchases / amountForBonus * bonusesPerAmount;
-            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesPerAmount;
+            int bonusesOfPurchases = 70;
+            int bonus = amountOfPurchases / amountForBonus * bonusesOfPurchases;
+            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesOfPurchases;
                 System.out.println(accumulatedBonuses);
                 System.out.println(bonus);
         }if (amountOfPurchases >= 150_000) {
-            int bonusesPerAmount = 100;
-            int bonus = amountOfPurchases / amountForBonus * bonusesPerAmount;
-            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesPerAmount;
+            int bonusesOfPurchases = 100;
+            int bonus = amountOfPurchases / amountForBonus * bonusesOfPurchases;
+            int accumulatedBonuses = amountOfPreviousPurchases / amountForBonus * bonusesOfPurchases;
                 System.out.println(accumulatedBonuses);
                 System.out.println(bonus);
             }
